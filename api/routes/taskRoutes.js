@@ -1,4 +1,4 @@
-const taskBuilder = require('../controllers/taskController')
+const taskBuilder = require('../controllers/taskController');
 
 module.exports = app => {
     app
@@ -8,6 +8,6 @@ module.exports = app => {
     app
         .route('/task/:taskId')
         .get(taskBuilder.read_a_task)
-        .put(taskBuilder.put_a_task)
+        .put(taskBuilder.update_a_task)
         .delete(taskBuilder.delete_a_task);
 }

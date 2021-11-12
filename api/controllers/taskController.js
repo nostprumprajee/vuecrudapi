@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const task = mongoose.model('task');
 
 exports.list_all_tasks = (req, res) => {
-    task.find({}, tasks) =>{
-        it (err) res.send(err);
+    task.find({}, (err, tasks) =>{
+        if (err) res.send(err);
         res.json(tasks);
     })
 }
