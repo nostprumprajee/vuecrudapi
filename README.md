@@ -1,3 +1,3 @@
 # vuecrudapi
  
-x
+This project for POC vue crud api
